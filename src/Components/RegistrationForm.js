@@ -21,7 +21,7 @@ const RegistrationForm = () => {
   // 
   const sendDataToBackend = async () => {
     try {
-      const response = await axios.post('https://emplybackend.vercel.app/register', formData); // Use the correct backend route
+      const response = await axios.post('https://emply-me-backend.vercel.app/register', formData); // Use the correct backend route
       console.log('Registration successful:', response.data);
   
       // Handle success, e.g., show a success message or redirect to a login page

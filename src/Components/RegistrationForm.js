@@ -18,6 +18,7 @@ const RegistrationForm = () => {
     age: '',
   });
 
+  // 
   const sendDataToBackend = async () => {
     try {
       const response = await axios.post('https://emplybackend.vercel.app/register', formData); // Use the correct backend route
@@ -56,6 +57,7 @@ const RegistrationForm = () => {
           value={formData.name}
           onChange={handleChange}
           required
+          autoComplete = "text"
         />
       </div>
       <div>
@@ -67,6 +69,7 @@ const RegistrationForm = () => {
           value={formData.email}
           onChange={handleChange}
           required
+          autoComplete = "text"
         />
       </div>
       <div>
@@ -78,6 +81,7 @@ const RegistrationForm = () => {
           value={formData.password}
           onChange={handleChange}
           required
+          autoComplete = "text"
         />
       </div>
       <div>
@@ -88,6 +92,7 @@ const RegistrationForm = () => {
           name="occupation"
           value={formData.occupation}
           onChange={handleChange}
+          autoComplete = "text"
         />
       </div>
       <div>
@@ -98,6 +103,7 @@ const RegistrationForm = () => {
           name="skills"
           value={formData.skills}
           onChange={handleChange}
+          autoComplete = "text"
         />
       </div>
       <div>
@@ -108,6 +114,7 @@ const RegistrationForm = () => {
           name="education"
           value={formData.education}
           onChange={handleChange}
+          autoComplete = "text"
         />
       </div>
       <div>
@@ -131,6 +138,7 @@ const RegistrationForm = () => {
           name="age"
           value={formData.age}
           onChange={handleChange}
+          autoComplete = "text"
         />
       </div>
       <div>
